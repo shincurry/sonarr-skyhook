@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  app:
+    restart: unless-stopped
+    image: sonarr-skyhook:latest
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    environment:
+      - NODE_ENV=production
+      - HOST=0.0.0.0
+    ports:
+      - "127.0.0.1:3345:3000"
+    command: yarn node index.js

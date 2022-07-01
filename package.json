@@ -1,0 +1,17 @@
+{
+  "name": "sonarr-skyhook",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "express": "^4.18.1",
+    "node-cache": "^5.1.2",
+    "node-themoviedb": "^0.2.8",
+    "node-tvdb": "^4.1.0",
+    "tvdbapi": "^2.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}
